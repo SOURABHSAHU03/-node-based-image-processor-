@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>miniprojClass</class>
+ <widget class="QMainWindow" name="miniprojClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>miniproj</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="imageLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>650</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt;Your image will appear here ....&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="browseButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>100</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="grayscaleButton">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>650</y>
+      <width>100</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Grayscale</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveButton">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>650</y>
+      <width>100</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>20</y>
+      <width>200</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#15ff38;&quot;&gt;Choose your image : &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>699</x>
+      <y>430</y>
+      <width>221</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>BLUR</string>
+    </property>
+    <widget class="QPushButton" name="blurButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>160</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Blur</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="blurSlider">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>160</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>20</y>
+      <width>220</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>FLIP</string>
+    </property>
+    <widget class="QPushButton" name="HflipButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>160</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Horizontal Flip</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="VflipButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>160</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Vertical Flip</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>160</y>
+      <width>220</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>CROP</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>80</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Y:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="cropButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>160</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Crop</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="axisY">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>80</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="axisX">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>80</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>300</y>
+      <width>220</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>BRIGHTNESS</string>
+    </property>
+    <widget class="QPushButton" name="brightnessButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>160</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Brightness</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="brightnessSlider">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>160</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="OPERATIONS">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>20</y>
+      <width>220</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>OPERATIONS</string>
+    </property>
+    <widget class="QPushButton" name="undoButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>160</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>UNDO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="redoButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>160</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>REDO</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>160</y>
+      <width>220</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>HUE</string>
+    </property>
+    <widget class="QPushButton" name="hueButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>160</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hue</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="hueSlider">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>160</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_8">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>300</y>
+      <width>220</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>GRADIENT</string>
+    </property>
+    <widget class="QPushButton" name="gradientButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>160</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gradient</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="gradientSlider">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>160</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_9">
+    <property name="geometry">
+     <rect>
+      <x>949</x>
+      <y>429</y>
+      <width>221</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>SATURATION</string>
+    </property>
+    <widget class="QPushButton" name="saturationButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>160</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Saturation</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="saturationSlider">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>160</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTextEdit" name="infoText">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>540</y>
+      <width>470</width>
+      <height>101</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="5" margin="11"/>
+ <resources>
+  <include location="miniproj.qrc"/>
+ </resources>
+ <connections/>
+</ui>

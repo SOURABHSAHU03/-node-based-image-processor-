@@ -2,7 +2,8 @@
 
 # Image Processing Application
 
-![Application Screenshot](Screenshot 2025-04-15 160628.png) <!-- Add a screenshot if available -->
+![Application Screenshot](./Screenshot 2025-04-15 160628.png) <!-- Add a screenshot if available -->
+
 
 A comprehensive Qt-based image processing application with OpenCV integration, offering a wide range of image manipulation and analysis tools.
 
